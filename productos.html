@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adal - Servicios</title>
+    <link rel="stylesheet" href="css/estilos.css"/> <!-- Link a mi css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!-- Para garantizar una representación adecuada y un zoom táctil para todos los dispositivos, no olvidar agregar el viewport -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"><!-- Debe estar en la carpeta css cuando descargamos el bootstrap -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/><!-- animaciones -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Passion+One&display=swap" rel="stylesheet"><!-- tipografias -->
+</head>
+<body>
+  <header>
+<!-- EMPIEZA EL NAV -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="bkgColor">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img id="imgMarca" src="media/adalmarca.png">
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proveedores.html">PROVEEDORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- TERMINA EL NAV  -->
+
+  <div class="container-fluid">
+
+<!-- EMPIEZA SECTION CONOCENOS  -->
+  <section>
+    <div class="row" id="myRow">
+      <div class="col-md-12">
+        <h3 class="h4defi tituloCentrado animate__animated animate__zoomIn">Nuestros Productos</h3>
+      </div>
+    </div>
+
+<!-- EMPIEZA SECTION GALERÍA  -->
+
+<!-- EMPIEZA SECTION 1  -->
+  <section>
+    <h3 class="h3defi tituloCentrado">Conexiones de Agua</h3>
+  </section>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="media/conexiones1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="media/conexiones1exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="media/conexiones2exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="media/conexiones3exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="media/conexiones4exp.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+<!-- TERMINA SECTION 1  -->
+
+<!-- EMPIEZA SECTION 2  -->
+  <section>
+    <h3 class="h3defi tituloCentrado">Construcción en Seco</h3>
+  </section>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="media/conexiones1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="media/conexiones1exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="media/conexiones2exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="media/conexiones3exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="media/conexiones4exp.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+<!-- TERMINA SECTION 2  -->
+
+<!-- EMPIEZA SECTION 3  -->
+  <section>
+    <h3 class="h3defi tituloCentrado">Metales</h3>
+  </section>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="media/conexiones1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="media/conexiones4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="media/conexiones1exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="media/conexiones2exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="media/conexiones3exp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="media/conexiones4exp.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+<!-- TERMINA SECTION 3  -->
+
+<!-- TERMINA SECTION GALERÍA  -->
+
+
+<!-- EMPIEZA EL FOOTER  -->
+<footer class="footerDown">
+  <div class="row colorSectionF">
+    <div class="col-md-4">
+      <div class="col-md-12">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.8600930357284!2d-68.81578968427723!3d-32.92829447829053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0ecbfeadd451%3A0xf33d6a40bc30f763!2sADAL%20S.A.%20-Grupo%20Gentile-!5e0!3m2!1ses!2sar!4v1611372346278!5m2!1ses!2sar" width="350" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>  
+    </div>
+
+    <div class="col-md-4">
+      <div class="col-md-12">
+        <p class="w-responsive mx-auto mb-5 pdefiF"><img src="media/footer-mail.png" alt="mail" align="left" class="imgBordeF">ventas@adalsa.com.ar</p>
+        <p class="w-responsive mx-auto mb-5 pdefiF"><img src="media/footer-fijo.png" alt="tel" align="left" class="imgBordeF">(0261) 4316137</p>
+        <p class="w-responsive mx-auto mb-5 pdefiF"><img src="media/footer-address.png" alt="dirección" align="left" class="imgBordeF">Carril Rodriguez Peña 2180 Godoy Cruz. Mendoza</p>
+      </div> 
+    </div>
+
+    <div class="col-md-4">
+      <div class="col-md-12">
+        <img class="marcaF" src="media/adalmarca.png" alt="adal">
+      </div> 
+    </div>
+
+  </div>
+</footer>
+<!-- TERMINA EL FOOTER  -->
+
+</div> <!-- El que cierra el container fluid  -->
+
+</section>
+ <!-- Esto sirve para que funcione bootstrap y material -->
+  <script src="js/jquery.js"></script><!-- Este lo bajo de jquery.com y elijo la opción Download the compressed, production jQuery 3.5.1 -->
+  <script src="js/bootstrap.bundle.min.js"></script> <!-- Están en la carpeta js que viene con bootstrap -->
+  <script src="js/bootstrap.min.js"></script> <!-- Están en la carpeta js que viene con bootstrap -->
+    <!-- Esto que viene abajo es para que me detecte el scroll por el nav que cambia de color -->
+  <script>
+      $(window).scroll(function(){
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 200);
+      });
+  </script>
+
+  <script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+
+
+</html>
